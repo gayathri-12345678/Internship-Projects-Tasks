@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="ImageGallery.css" />
+  </head>
+  <body>
+    <h1>Image Gallery</h1>
+
+    <div class="gallery" onclick="openLightbox(event)">
+        <img src="images/crane.jpeg"
+            alt="Image 1">
+        <img src="images/parrot.jpeg"
+            alt="Image 2">
+        <img src="images/sparrow.jpeg"
+            alt="Image 3">
+        <img src="images/nightingale.jpeg"
+            alt="Image 4">
+        <img src="images/peacock.jpeg"
+            alt="Image 5">
+         <img src="images/hummingbird.jpeg"
+            alt="Image 6">
+        <img src="images/pigeon.jpeg"
+            alt="Image 7">
+        <img src="images/kingfisher.jpeg"
+            alt="Image 8" class="">
+        <img src="images/kiwi.jpeg"
+            alt="Image 9">
+    </div>
+
+   
+    <div id="lightbox">
+       
+        <span id="close-btn" onclick="closeLightbox()">&times;</span>
+
+        
+        <img id="lightbox-img" src="" alt="lightbox image">
+
+       
+        <div id="thumbnail-container">
+           
+        </div>
+
+        
+        <button id="prev-btn" onclick="changeImage(-1)">&lt; Prev</button>
+        <button id="next-btn" onclick="changeImage(1)">Next &gt;</button>
+    </div>
+    <script src="ImageGallery.js">
+
+
+    </script>
+  </body>
+</html>
